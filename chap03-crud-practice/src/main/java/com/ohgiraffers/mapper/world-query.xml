@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment />
+    <entry key="insertCity">
+        INSERT INTO
+            city(=Name, CountryCode, District, Population)
+        VALUES
+            (?, ?, ?, ?)
+    </entry>
+
+    <entry key="updateCity">
+        UPDATE
+            city
+        SET
+            Name = ?,
+            CountryCode = ?,
+            District = ?,
+            Population = ?
+        WHERE
+            ID = ?
+    </entry>
+
+    <entry key="deleteCity">
+        DELETE FROM
+            city
+        WHERE
+            ID = ?
+    </entry>
+</properties>
